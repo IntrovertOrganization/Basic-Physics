@@ -4,11 +4,15 @@
 #include <cmath>
 #include <vector>
 #include <string>
-#include <sstream>
+#include <sstream> 
 
-const std::string blue = "\033[34m", red = "\033[31m", green = "\033[32m", bold = "\033[1m", reset = "\033[0m";
+const std::string blue = "\033[34m", yellow = "\033[33m", green = "\033[32m", red = "\033[31m", reset = "\033[0m";
 
-const std::string input = blue+"[input]"+reset, output = green+"[output]"+reset, error = red+"[error]"+reset;
+void finish() {
+	std::cout << "\n" << red << "Exit..." << reset << "\n\n";
+	exit(0);
+}
+
 const double k = 8.9875e9;
 
 double calculateCoulombsLaw(double& q1, double& q2, double& r) {
