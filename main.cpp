@@ -8,11 +8,10 @@ int main() {
 		"\n"+bold+blue+"The Coulomb's Law"+reset+"\n",
 		"          |q1| x |q2|  ",
 		blue+"|F|"+reset+" = ke ------------- ",
-		"             r^2    \n\n",
-		blue+"ke"+reset+"  = A constant, default value is: 8.9875 x 10^9, N . m^2/C^2",
-		blue+"q1 & q2"+reset+" = The quantities of each charge (C)",
-		blue+"r"+reset
-		+"  = The distance between the charges (m^2)\n"
+		"             r^2    \n",
+		blue+"ke"+reset+"  = Coulomb's constant, the value is: 8.9875 x 10^9, N . m^2/C^2",
+		blue+"q1 & q2"+reset+" = Electric charge (C)",
+		blue+"r"+reset+"  = Distance between the charges (m^2)\n"
 	};
 
 	for (std::string item : explanation) {
@@ -20,7 +19,7 @@ int main() {
 	}
 
 	std::vector<std::string> list = {
-		"[option] | [title]",
+		"\n[option] | [title]",
 		"------------------",
 		"[1]      | Calculate Coloumb's law",
 		"[2]      | Source",
@@ -31,7 +30,7 @@ int main() {
 	}
 
 	std::vector<std::string> sources = {
-		"[source]               | [url]",
+		"\n[source]               | [url]",
 		"------------------------------",
 		"Wikipedia              | https://en.wikipedia.org/wiki/Coulomb%27s_law",
 		"The Physics Classroom  | https://www.physicsclassroom.com/class/estatics/lesson-3/coulomb-s-law",
@@ -44,7 +43,6 @@ int main() {
 
 	while (option != 0) {
 		if (option == 1) {
-
 			std::cout << input << " Enter q1 value: ";
 			std::cin >> q1;
 
